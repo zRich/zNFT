@@ -1,0 +1,14 @@
+nft = await ERC721PresetMinterPauserAutoId.deployed()
+
+
+truffle(matic)> await nft.name()
+'Rich NFT'
+truffle(matic)> await nft.symbol()
+'NFT'
+
+await nft.mint("0xceBA53B2A1d2043FCB297D3718Cb2E955497e389")
+
+truffle(matic)> await nft.ownerOf(0)
+'0xceBA53B2A1d2043FCB297D3718Cb2E955497e389'
+truffle(matic)> await nft.ownerOf(1)
+'0xba26F770618072E4b4194C1d5231B562d0E7be1e'
