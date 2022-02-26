@@ -1,6 +1,15 @@
-# zNFT
+# Basic Sample Hardhat Project
 
-1. truffle console --network matic
-2. nft = await ERC721PresetMinterPauserAutoId.deployed()
-3. await nft.ownerOf(0)
-4. await nft.mint("account address")
+This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+
+Try running some of the following tasks:
+
+```shell
+npx hardhat accounts
+npx hardhat compile
+npx hardhat clean
+npx hardhat test
+npx hardhat node
+node scripts/sample-script.js
+npx hardhat help
+```
