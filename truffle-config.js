@@ -53,6 +53,9 @@ module.exports = {
       provider: () => new HDWalletProvider(mnemonic, `https://rpc-mumbai.maticvigil.com/v1/b05c8dbad6026e2da28175af81a936259917426e`),
       network_id: "80001",       // Any network (default: none)
       confirmations: 2,
+      gas: 8500000,
+      gasPrice: 1000000000,
+      skipDryRun: true,
       timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
     },
 
